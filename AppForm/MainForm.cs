@@ -29,5 +29,11 @@
             StopWatch Form = new StopWatch();
             Form.ShowDialog();
         }
+
+        private void tínhToánTrênDãySốToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TinhtoanDayso Form = new TinhtoanDayso();
+            Form.ShowDialog();
+        }
     }
 }

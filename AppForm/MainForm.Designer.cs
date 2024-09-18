@@ -32,8 +32,8 @@
             tiệnÍchToolStripMenuItem = new ToolStripMenuItem();
             tínhPhươngTrìnhBậc2ToolStripMenuItem = new ToolStripMenuItem();
             đồngHồĐếmGiờToolStripMenuItem = new ToolStripMenuItem();
-            tínhChuViDiệnTíchToolStripMenuItem = new ToolStripMenuItem();
             kiểmTraSốNguyênTốToolStripMenuItem = new ToolStripMenuItem();
+            tínhToánTrênDãySốToolStripMenuItem = new ToolStripMenuItem();
             hỗTrợToolStripMenuItem = new ToolStripMenuItem();
             thoátToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             // tiệnÍchToolStripMenuItem
             // 
-            tiệnÍchToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tínhPhươngTrìnhBậc2ToolStripMenuItem, đồngHồĐếmGiờToolStripMenuItem, tínhChuViDiệnTíchToolStripMenuItem, kiểmTraSốNguyênTốToolStripMenuItem });
+            tiệnÍchToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tínhPhươngTrìnhBậc2ToolStripMenuItem, đồngHồĐếmGiờToolStripMenuItem, kiểmTraSốNguyênTốToolStripMenuItem, tínhToánTrênDãySốToolStripMenuItem });
             tiệnÍchToolStripMenuItem.Font = new Font("Tahoma", 12F);
             tiệnÍchToolStripMenuItem.Name = "tiệnÍchToolStripMenuItem";
             tiệnÍchToolStripMenuItem.Size = new Size(77, 23);
@@ -71,18 +71,19 @@
             đồngHồĐếmGiờToolStripMenuItem.Text = "Đồng hồ đếm giờ";
             đồngHồĐếmGiờToolStripMenuItem.Click += đồngHồĐếmGiờToolStripMenuItem_Click;
             // 
-            // tínhChuViDiệnTíchToolStripMenuItem
-            // 
-            tínhChuViDiệnTíchToolStripMenuItem.Name = "tínhChuViDiệnTíchToolStripMenuItem";
-            tínhChuViDiệnTíchToolStripMenuItem.Size = new Size(251, 24);
-            tínhChuViDiệnTíchToolStripMenuItem.Text = "Tính chu vi diện tích";
-            // 
             // kiểmTraSốNguyênTốToolStripMenuItem
             // 
             kiểmTraSốNguyênTốToolStripMenuItem.Name = "kiểmTraSốNguyênTốToolStripMenuItem";
             kiểmTraSốNguyênTốToolStripMenuItem.Size = new Size(251, 24);
             kiểmTraSốNguyênTốToolStripMenuItem.Text = "Kiểm tra số nguyên tố";
             kiểmTraSốNguyênTốToolStripMenuItem.Click += kiểmTraSốNguyênTốToolStripMenuItem_Click;
+            // 
+            // tínhToánTrênDãySốToolStripMenuItem
+            // 
+            tínhToánTrênDãySốToolStripMenuItem.Name = "tínhToánTrênDãySốToolStripMenuItem";
+            tínhToánTrênDãySốToolStripMenuItem.Size = new Size(251, 24);
+            tínhToánTrênDãySốToolStripMenuItem.Text = "Tính toán trên dãy số";
+            tínhToánTrênDãySốToolStripMenuItem.Click += tínhToánTrênDãySốToolStripMenuItem_Click;
             // 
             // hỗTrợToolStripMenuItem
             // 
@@ -105,6 +106,7 @@
             ClientSize = new Size(1029, 570);
             Controls.Add(menuStrip1);
             Font = new Font("Tahoma", 12F);
+            IsMdiContainer = true;
             Margin = new Padding(4);
             Name = "MainForm";
             Text = "Chương trình tiện ích";
@@ -122,7 +124,7 @@
         private ToolStripMenuItem hỗTrợToolStripMenuItem;
         private ToolStripMenuItem thoátToolStripMenuItem;
         private ToolStripMenuItem đồngHồĐếmGiờToolStripMenuItem;
-        private ToolStripMenuItem tínhChuViDiệnTíchToolStripMenuItem;
         private ToolStripMenuItem kiểmTraSốNguyênTốToolStripMenuItem;
+        private ToolStripMenuItem tínhToánTrênDãySốToolStripMenuItem;
     }
 }
